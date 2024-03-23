@@ -11,6 +11,9 @@ dependencies:
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.26
     version: 2.0.0-rc.26(vite@5.2.4)
+  '@tabler/icons-react':
+    specifier: ^3.1.0
+    version: 3.1.0(react@18.2.0)
   isomorphic-fetch:
     specifier: ^3
     version: 3.0.0
@@ -655,6 +658,19 @@ packages:
   /@swc/types@0.1.5:
     resolution: {integrity: sha512-myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==}
     dev: true
+
+  /@tabler/icons-react@3.1.0(react@18.2.0):
+    resolution: {integrity: sha512-k/WTlax2vbj/LpxvaJ+BmaLAAhVUgyLj4Ftgaczz66tUSNzqrAZXCFdOU7cRMYPNVBqyqE2IdQd2rzzhDEJvkw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      '@tabler/icons': 3.1.0
+      react: 18.2.0
+    dev: false
+
+  /@tabler/icons@3.1.0:
+    resolution: {integrity: sha512-CpZGyS1IVJKFcv88yZ2sYZIpWWhQ6oy76BQKQ5SF0fGgOqgyqKdBGG/YGyyMW632on37MX7VqQIMTzN/uQqmFg==}
+    dev: false
 
   /@techor/extend@3.0.18:
     resolution: {integrity: sha512-kyNNs5iqMUzSdk45mJ74bJcv58KYjjh3/3QM5PALAYa4DLK1yhtBpnsKXGV9XVbLh+FpcJB2D/QXTO/2UZtYFg==}
