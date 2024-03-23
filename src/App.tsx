@@ -30,7 +30,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    loadPyodide()
+    loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.25.0/full/' })
       .then((pyodide) => setPyodide(pyodide))
       .catch((error) => console.error(error))
       .finally(() => setIsLoading(false))
