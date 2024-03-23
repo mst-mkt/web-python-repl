@@ -1,15 +1,12 @@
 import { loadPyodide, type PyodideInterface } from 'pyodide'
-import { useEffect, useState, type ChangeEvent } from 'react'
+import { useEffect, useState } from 'react'
+import { useInput } from './hooks/useInput'
 
 const App = () => {
   const [pyodide, setPyodide] = useState<PyodideInterface>()
-  const [inputText, setInputText] = useState('')
   const [shellResults, setShellResults] = useState<string[]>([])
   const [isLoading, setIsLoading] = useState(true)
-
-  const handleInputChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-    setInputText(event.target.value)
-  }
+  const [inputText, handleInputChange, clearInput] = useInput('')
 
   const execute = async () => {
     if (pyodide === undefined) return
@@ -25,7 +22,7 @@ const App = () => {
     } catch (error) {
       setShellResults((prev) => [...prev, `>>> ${inputText.trim()}`, `${error}`])
     } finally {
-      setInputText('')
+      clearInput()
     }
   }
 
@@ -45,7 +42,7 @@ const App = () => {
           <pre key={index}>{result}</pre>
         ))}
       </div>
-      <textarea value={inputText} onChange={handleInputChange} />
+      <textarea value={inputText} onChange={handleInputChange<HTMLTextAreaElement>} />
       <button type="button" onClick={execute}>
         Execute
       </button>
