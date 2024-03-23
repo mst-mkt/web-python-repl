@@ -3,15 +3,15 @@ import { usePyodide } from './hooks/usePyodide'
 
 const App = () => {
   const [inputText, handleInputChange, clearInput] = useInput('')
-  const { isLoading, shellResults, execute } = usePyodide({ execCallback: clearInput })
+  const { isLoading, replInteractions, execute } = usePyodide({ execCallback: clearInput })
 
   if (isLoading) return <div>initializing...</div>
 
   return (
     <div>
       <div>
-        {shellResults.map((result, index) => (
-          <pre key={index}>{result}</pre>
+        {replInteractions.map((interaction) => (
+          <pre key={interaction.timestamp.toDateString()}>{interaction.text}</pre>
         ))}
       </div>
       <textarea value={inputText} onChange={handleInputChange<HTMLTextAreaElement>} />

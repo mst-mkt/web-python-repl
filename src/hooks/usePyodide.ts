@@ -1,5 +1,6 @@
-import { loadPyodide, type PyodideInterface } from 'pyodide'
+import { type PyodideInterface, loadPyodide } from 'pyodide'
 import { useCallback, useEffect, useState } from 'react'
+import type { ReplInteraction } from '../types/ReplType'
 
 type Option = {
   execCallback?: () => void
@@ -8,22 +9,34 @@ type Option = {
 export const usePyodide = ({ execCallback }: Option) => {
   const [pyodide, setPyodide] = useState<PyodideInterface | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [shellResults, setShellResults] = useState<string[]>([])
+  const [replInteractions, setReplInteractions] = useState<ReplInteraction[]>([])
 
   const execute = useCallback(
     async (inputText: string) => {
       if (pyodide === null) return
       if (inputText === '') return
 
+      const input: ReplInteraction<'input'> = {
+        type: 'input',
+        text: inputText,
+        timestamp: new Date(),
+      }
+
       try {
         const result = await pyodide.runPythonAsync(inputText)
-        setShellResults((prev) => [
-          ...prev,
-          `>>> ${inputText.trim()}`,
-          ...(result === '' ? [] : [result]),
-        ])
-      } catch (error) {
-        setShellResults((prev) => [...prev, `>>> ${inputText.trim()}`, `${error}`])
+        const output: ReplInteraction<'output'> = {
+          type: 'output',
+          text: result === '' ? undefined : result,
+          timestamp: new Date(),
+        }
+        setReplInteractions((prev) => [...prev, input, output])
+      } catch (err) {
+        const error: ReplInteraction<'error'> = {
+          type: 'error',
+          text: err as string,
+          timestamp: new Date(),
+        }
+        setReplInteractions((prev) => [...prev, input, error])
       } finally {
         execCallback?.()
       }
@@ -38,5 +51,5 @@ export const usePyodide = ({ execCallback }: Option) => {
       .finally(() => setIsLoading(false))
   }, [])
 
-  return { isLoading, shellResults, execute }
+  return { isLoading, replInteractions, execute }
 }
