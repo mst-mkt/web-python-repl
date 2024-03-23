@@ -11,6 +11,9 @@ dependencies:
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.26
     version: 2.0.0-rc.26(vite@5.2.4)
+  '@master/normal.css':
+    specifier: ^2.1.1
+    version: 2.1.1
   '@tabler/icons-react':
     specifier: ^3.1.0
     version: 3.1.0(react@18.2.0)
