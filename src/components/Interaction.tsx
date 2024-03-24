@@ -40,9 +40,10 @@ export const Interactions = ({ content }: InteractionProps) => {
 
   return (
     <div
-      className={`grid grid-template-columns:interaction gap:8 p:16 bb:#2222|solid|1 ${
-        styles[content.type]
-      }`}
+      className={`
+        grid grid-template-columns:interaction gap:8 p:16
+        bb:#2222|solid|1:not(:last) ${styles[content.type]}
+      `}
     >
       <Icon size={24} color={colors[content.type]} />
       {content.text === undefined ? (

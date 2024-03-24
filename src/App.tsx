@@ -15,10 +15,12 @@ const App = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="p:88|24|64">
-          {replInteractions.map((interaction) => (
-            <Interactions key={interaction.timestamp.toISOString()} content={interaction} />
-          ))}
+        <div className="p:96|24|64">
+          <div className="r:8 overflow:hidden">
+            {replInteractions.map((interaction) => (
+              <Interactions key={interaction.timestamp.toISOString()} content={interaction} />
+            ))}
+          </div>
           <TextArea
             value={inputText}
             onChange={handleInputChange<HTMLTextAreaElement>}
