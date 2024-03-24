@@ -9,6 +9,7 @@ import {
 } from '@tabler/icons-react'
 import type { ForwardRefExoticComponent, RefAttributes } from 'react'
 import type { ReplInteraction } from '../types/ReplType'
+import { CopyButton } from './CopyButton'
 
 type IconComponent = ForwardRefExoticComponent<Omit<IconProps, 'ref'> & RefAttributes<Icon>>
 
@@ -40,17 +41,19 @@ const styles: Record<ReplInteraction['type'], string> = {
 }
 
 type InteractionProps = {
+  showCopyButton?: boolean
   content: ReplInteraction
 }
 
-export const Interactions = ({ content }: InteractionProps) => {
+export const Interactions = ({ content, showCopyButton = true }: InteractionProps) => {
   const Icon = icons[content.type]
 
   return (
     <div
       className={`
-        grid grid-template-columns:interaction gap:8 p:16
-        bb:#2222|solid|1:not(:last) ${styles[content.type]}
+        rel grid grid-template-columns:interaction gap:8 p:16
+        bb:#2222|solid|1:not(:last) opacity:1:hover>div
+        ${styles[content.type]}
       `}
     >
       <Icon size={24} color={colors[content.type]} />
@@ -62,6 +65,7 @@ export const Interactions = ({ content }: InteractionProps) => {
         </pre>
       )}
       <time className="p:6 color:#333 f:10">{content.timestamp.toLocaleTimeString()}</time>
+      {showCopyButton && <CopyButton text={content.text ?? 'undefined'} />}
     </div>
   )
 }

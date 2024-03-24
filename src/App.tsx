@@ -31,8 +31,12 @@ const App = () => {
           <div className="r:8 overflow:hidden">
             {replInteractions
               .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime())
-              .map((interaction) => (
-                <Interactions key={interaction.timestamp.getTime()} content={interaction} />
+              .map((interaction, index) => (
+                <Interactions
+                  key={interaction.timestamp.getTime()}
+                  content={interaction}
+                  showCopyButton={index !== 0}
+                />
               ))}
           </div>
           <TextArea
