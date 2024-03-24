@@ -9,7 +9,13 @@ type Option = {
 export const usePyodide = ({ execCallback }: Option) => {
   const [pyodide, setPyodide] = useState<PyodideInterface | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [replInteractions, setReplInteractions] = useState<ReplInteraction[]>([])
+  const [replInteractions, setReplInteractions] = useState<ReplInteraction[]>([
+    {
+      type: 'info',
+      text: 'Welcome to Web Python REPL.',
+      timestamp: new Date(),
+    },
+  ])
 
   const execute = useCallback(
     async (inputText: string) => {

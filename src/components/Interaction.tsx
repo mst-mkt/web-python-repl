@@ -3,6 +3,7 @@ import {
   IconArrowBadgeLeftFilled,
   IconArrowBadgeRightFilled,
   IconExclamationCircle,
+  IconInfoCircle,
 } from '@tabler/icons-react'
 import type { ForwardRefExoticComponent, RefAttributes } from 'react'
 import type { ReplInteraction } from '../types/ReplType'
@@ -10,18 +11,21 @@ import type { ReplInteraction } from '../types/ReplType'
 type IconComponent = ForwardRefExoticComponent<Omit<IconProps, 'ref'> & RefAttributes<Icon>>
 
 const icons: Record<ReplInteraction['type'], IconComponent> = {
+  info: IconInfoCircle,
   input: IconArrowBadgeRightFilled,
   output: IconArrowBadgeLeftFilled,
   error: IconExclamationCircle,
 }
 
 const colors: Record<ReplInteraction['type'], string> = {
+  info: '#58f',
   input: '#58f8',
   output: '#5853',
   error: '#f58',
 }
 
 const styles: Record<ReplInteraction['type'], string> = {
+  info: 'color:blue-50>pre bg:blue-5',
   input: '',
   output: '',
   error: 'color:red-50>pre bg:red-5',

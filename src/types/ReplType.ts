@@ -1,4 +1,4 @@
-type InteractionType = 'input' | 'output' | 'error'
+type InteractionType = 'info' | 'input' | 'output' | 'error'
 
 export type ReplInteraction<Type extends InteractionType = InteractionType> = {
   type: Type
