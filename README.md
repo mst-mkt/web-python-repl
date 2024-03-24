@@ -3,11 +3,13 @@
 </h1>
 
 <div align="center">
-    <i>Interactive Python shell in browser</i><br />
+    <i>Interactive Python shell in browser</i><br /><br />
     <a href="https://github.com/mst-mkt/web-python-repl/actions/workflows/check.yml">
         <img src="https://github.com/mst-mkt/web-python-repl/actions/workflows/check.yml/badge.svg?branch=main" alt="Lint and TypeCheck" />
-    </a><br />
-    <img src="https://github.com/mst-mkt/web-python-repl/assets/131662659/a26a6557-166d-4ede-b988-b8e7c54ee497" alt="Screenshot" />
+    </a>
+    <a href="https://python-repl.keito.dev">
+        <img src="https://img.shields.io/badge/Available%20on-python‐repl.keito.dev-orange.svg?logo=cloudflare" alt="Try it online" />
+    </a>
 </div>
 
 ## Screenshots
