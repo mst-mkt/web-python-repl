@@ -52,7 +52,25 @@ export const usePyodide = ({ execCallback }: Option) => {
 
   useEffect(() => {
     loadPyodide({ indexURL: import.meta.env.VITE_PYODIDE_INDEX_URL })
-      .then((pyodide) => setPyodide(pyodide))
+      .then((pyodide) => {
+        pyodide.setStdout({
+          batched: (text) => {
+            setReplInteractions((prev) => [
+              ...prev,
+              { type: 'standard-output', text, timestamp: new Date() },
+            ])
+          },
+        })
+        pyodide.setStderr({
+          batched: (text) => {
+            setReplInteractions((prev) => [
+              ...prev,
+              { type: 'standard-error', text, timestamp: new Date() },
+            ])
+          },
+        })
+        setPyodide(pyodide)
+      })
       .catch((error) => console.error(error))
       .finally(() => setIsLoading(false))
   }, [])

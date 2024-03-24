@@ -29,9 +29,11 @@ const App = () => {
       ) : (
         <div className="p:96|24|64">
           <div className="r:8 overflow:hidden">
-            {replInteractions.map((interaction) => (
-              <Interactions key={interaction.timestamp.toISOString()} content={interaction} />
-            ))}
+            {replInteractions
+              .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime())
+              .map((interaction) => (
+                <Interactions key={interaction.timestamp.getTime()} content={interaction} />
+              ))}
           </div>
           <TextArea
             value={inputText}
