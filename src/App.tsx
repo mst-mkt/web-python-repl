@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Header } from './components/Header'
 import { Interactions } from './components/Interaction'
 import { Loading } from './components/Loading'
@@ -8,6 +9,17 @@ import { usePyodide } from './hooks/usePyodide'
 const App = () => {
   const [inputText, handleInputChange, clearInput] = useInput('')
   const { isLoading, replInteractions, execute } = usePyodide({ execCallback: clearInput })
+
+  useEffect(() => {
+    if (replInteractions.length === 0) return
+    const scrollToBottom = () => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth',
+      })
+    }
+    scrollToBottom()
+  }, [replInteractions.length])
 
   return (
     <div>
