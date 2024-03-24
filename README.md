@@ -10,6 +10,9 @@
     <img src="https://github.com/mst-mkt/web-python-repl/assets/131662659/a26a6557-166d-4ede-b988-b8e7c54ee497" alt="Screenshot" />
 </div>
 
+## Screenshots
+![Screenshot](https://github.com/mst-mkt/web-python-repl/assets/131662659/a26a6557-166d-4ede-b988-b8e7c54ee497)
+
 ## Development
 
 ### Setup
