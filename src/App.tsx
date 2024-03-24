@@ -1,3 +1,4 @@
+import { Header } from './components/Header'
 import { useInput } from './hooks/useInput'
 import { usePyodide } from './hooks/usePyodide'
 
@@ -9,7 +10,8 @@ const App = () => {
 
   return (
     <div>
-      <div>
+      <Header />
+      <div className="p:80|24|24">
         {replInteractions.map((interaction) => (
           <pre key={interaction.timestamp.toDateString()}>{interaction.text}</pre>
         ))}
