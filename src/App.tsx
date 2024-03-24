@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { Interactions } from './components/Interaction'
+import { TextArea } from './components/TextArea'
 import { useInput } from './hooks/useInput'
 import { usePyodide } from './hooks/usePyodide'
 
@@ -12,15 +13,16 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="p:80|24|24">
+      <div className="p:88|24|64">
         {replInteractions.map((interaction) => (
           <Interactions key={interaction.timestamp.toISOString()} content={interaction} />
         ))}
+        <TextArea
+          value={inputText}
+          onChange={handleInputChange<HTMLTextAreaElement>}
+          onSend={() => execute(inputText)}
+        />
       </div>
-      <textarea value={inputText} onChange={handleInputChange<HTMLTextAreaElement>} />
-      <button type="button" onClick={() => execute(inputText)}>
-        Execute
-      </button>
     </div>
   )
 }
