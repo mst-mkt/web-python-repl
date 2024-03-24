@@ -20,11 +20,11 @@ export const usePyodide = ({ execCallback }: Option) => {
   const execute = useCallback(
     async (inputText: string) => {
       if (pyodide === null) return
-      if (inputText === '') return
+      if (inputText.trim() === '') return
 
       const input: ReplInteraction<'input'> = {
         type: 'input',
-        text: inputText,
+        text: inputText.trim(),
         timestamp: new Date(),
       }
 
