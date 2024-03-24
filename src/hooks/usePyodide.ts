@@ -51,7 +51,7 @@ export const usePyodide = ({ execCallback }: Option) => {
   )
 
   useEffect(() => {
-    loadPyodide({ indexURL: import.meta.env.PYODIDE_INDEX_URL })
+    loadPyodide({ indexURL: import.meta.env.VITE_PYODIDE_INDEX_URL })
       .then((pyodide) => setPyodide(pyodide))
       .catch((error) => console.error(error))
       .finally(() => setIsLoading(false))
