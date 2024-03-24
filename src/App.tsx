@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { Interactions } from './components/Interaction'
 import { useInput } from './hooks/useInput'
 import { usePyodide } from './hooks/usePyodide'
 
@@ -13,9 +14,7 @@ const App = () => {
       <Header />
       <div className="p:80|24|24">
         {replInteractions.map((interaction) => (
-          <pre key={`${interaction.text}-${interaction.timestamp.toISOString()}`}>
-            {interaction.text}
-          </pre>
+          <Interactions key={interaction.timestamp.toISOString()} content={interaction} />
         ))}
       </div>
       <textarea value={inputText} onChange={handleInputChange<HTMLTextAreaElement>} />
