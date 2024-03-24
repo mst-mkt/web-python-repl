@@ -33,7 +33,7 @@ export const usePyodide = ({ execCallback }: Option) => {
       } catch (err) {
         const error: ReplInteraction<'error'> = {
           type: 'error',
-          text: err as string,
+          text: `${err}`,
           timestamp: new Date(),
         }
         setReplInteractions((prev) => [...prev, input, error])
