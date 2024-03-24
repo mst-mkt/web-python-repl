@@ -13,7 +13,9 @@ const App = () => {
       <Header />
       <div className="p:80|24|24">
         {replInteractions.map((interaction) => (
-          <pre key={interaction.timestamp.toDateString()}>{interaction.text}</pre>
+          <pre key={`${interaction.text}-${interaction.timestamp.toISOString()}`}>
+            {interaction.text}
+          </pre>
         ))}
       </div>
       <textarea value={inputText} onChange={handleInputChange<HTMLTextAreaElement>} />
