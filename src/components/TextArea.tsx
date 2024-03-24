@@ -5,14 +5,23 @@ type TextAreaProps = {
   value: string
   onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void
   onSend: () => void
+  resetHistoryIndex: () => void
+  handleHistorySelect: (event: KeyboardEvent<HTMLTextAreaElement>) => void
 }
 
-export const TextArea = ({ value, onChange, onSend }: TextAreaProps) => {
+export const TextArea = ({
+  value,
+  onChange,
+  onSend,
+  resetHistoryIndex,
+  handleHistorySelect,
+}: TextAreaProps) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
-  const handleKeyDown = (event: KeyboardEvent<HTMLTextAreaElement>) => {
+  const handleEnter = (event: KeyboardEvent<HTMLTextAreaElement>) => {
     if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault()
       onSend()
+      resetHistoryIndex()
     }
   }
 
@@ -37,7 +46,10 @@ export const TextArea = ({ value, onChange, onSend }: TextAreaProps) => {
           onChange(e)
           updateHeight()
         }}
-        onKeyDown={handleKeyDown}
+        onKeyDown={(e) => {
+          handleEnter(e)
+          handleHistorySelect(e)
+        }}
         className="flex:1|1 p:8 resize:none lh:20px outline:none f:mono {f:14;color:#2225}::placeholder"
         rows={1}
         placeholder='type code and press "Enter" to execute...'

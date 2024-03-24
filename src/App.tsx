@@ -3,12 +3,18 @@ import { Header } from './components/Header'
 import { Interactions } from './components/Interaction'
 import { Loading } from './components/Loading'
 import { TextArea } from './components/TextArea'
+import { useHistorySelect } from './hooks/useHistorySelect'
 import { useInput } from './hooks/useInput'
 import { usePyodide } from './hooks/usePyodide'
+import { isInputInteraction } from './types/ReplType'
 
 const App = () => {
-  const [inputText, handleInputChange, clearInput] = useInput('')
+  const [inputText, handleInputChange, clearInput, setInput] = useInput('')
   const { isLoading, replInteractions, execute } = usePyodide({ execCallback: clearInput })
+  const { handleKeyboard, resetHistoryIndex } = useHistorySelect(
+    replInteractions.filter(isInputInteraction),
+    setInput,
+  )
 
   useEffect(() => {
     if (replInteractions.length === 0) return
@@ -43,6 +49,8 @@ const App = () => {
             value={inputText}
             onChange={handleInputChange<HTMLTextAreaElement>}
             onSend={() => execute(inputText)}
+            resetHistoryIndex={resetHistoryIndex}
+            handleHistorySelect={handleKeyboard}
           />
         </div>
       )}

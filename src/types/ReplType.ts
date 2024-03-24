@@ -5,3 +5,7 @@ export type ReplInteraction<Type extends InteractionType = InteractionType> = {
   text: string | undefined
   timestamp: Date
 }
+
+export const isInputInteraction = (
+  interaction: ReplInteraction,
+): interaction is ReplInteraction<'input'> => interaction.type === 'input'
