@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="flex ai:center gap:8 w:100% max-w:600 h:80 px:40">
         <IconTerminal size={32} color="#58f" />
         <h1 className="flex:1|1 f:20 color:#333 overflow:hidden t:ellipsis white-space:nowrap">
-          Python REPL
+          Web Python REPL
         </h1>
         <a
           href="http://github.com/mst-mkt/web-python-repl"
