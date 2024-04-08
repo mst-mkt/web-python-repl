@@ -26,7 +26,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.6.3",
     "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.23",
+    "@types/react-dom": "^18.2.24",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
