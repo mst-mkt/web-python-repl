@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@master/css':
-    specifier: 2.0.0-rc.26
-    version: 2.0.0-rc.26
+    specifier: 2.0.0-rc.33
+    version: 2.0.0-rc.33
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.26
     version: 2.0.0-rc.26(vite@5.2.10)
@@ -381,7 +381,7 @@ packages:
     peerDependencies:
       vite: '>=5.0.0'
     dependencies:
-      '@master/css': 2.0.0-rc.26
+      '@master/css': 2.0.0-rc.33
       '@master/css-extractor': 2.0.0-rc.26
       lodash.debounce: 4.0.8
       vite: 5.2.10
@@ -390,7 +390,7 @@ packages:
   /@master/css-extractor@2.0.0-rc.26:
     resolution: {integrity: sha512-MGCsO5xdMrPruuDEEdzwQ/Yqj1ZbVUxm+1SqU4uD3p6pUHyVujcZx3Thbry6DISset7AUSP29Zu7BmwIvUx2eg==}
     dependencies:
-      '@master/css': 2.0.0-rc.26
+      '@master/css': 2.0.0-rc.33
       '@master/css-validator': 2.0.0-rc.26
       '@techor/extend': 3.0.18
       '@techor/glob': 3.0.18
@@ -403,17 +403,17 @@ packages:
   /@master/css-validator@2.0.0-rc.26:
     resolution: {integrity: sha512-5o2kK/7D5yr46co/aylJAuuJsROpJSJzY/9WF0kI/Nf8MIby0ZhsC7DpbutSBfEBK8+vj/rm200fp5z1t/e5fA==}
     dependencies:
-      '@master/css': 2.0.0-rc.26
+      '@master/css': 2.0.0-rc.33
       css-tree: 2.3.1
     dev: false
 
-  /@master/css@2.0.0-rc.26:
-    resolution: {integrity: sha512-2n4EnRhuaz1qkqH6RGWDhlyM3+lR6lAAECXBee40o9AVAPxvsgwVMptY7PCHzpDESFkdzFyl9YAkOb+jJreSCw==}
+  /@master/css@2.0.0-rc.33:
+    resolution: {integrity: sha512-PcWjNHyF5JhmE55FumLs72E8miLvpaRtQEC2V7Ilw2ji2Ntx1D7iX9idnAtRc5fB3jrrZxVbShNbIfxq1sh1lw==}
     hasBin: true
     dependencies:
       '@master/colors': 2.0.0
       '@master/normal.css': 2.1.1
-      '@techor/extend': 3.0.18
+      '@techor/extend': 3.0.21
     dev: false
 
   /@master/normal.css@2.1.1:
@@ -677,6 +677,10 @@ packages:
 
   /@techor/extend@3.0.18:
     resolution: {integrity: sha512-kyNNs5iqMUzSdk45mJ74bJcv58KYjjh3/3QM5PALAYa4DLK1yhtBpnsKXGV9XVbLh+FpcJB2D/QXTO/2UZtYFg==}
+    dev: false
+
+  /@techor/extend@3.0.21:
+    resolution: {integrity: sha512-c3y6Z8wSr5XOGx/xR64byk/SGOjLtXYEvdjyDUxygFIAElNwJugPHSX1OFDEtZsTsxlUwK11GOGmWqJNDHVYEA==}
     dev: false
 
   /@techor/glob@3.0.18:
