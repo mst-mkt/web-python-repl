@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@master/css':
-    specifier: 2.0.0-rc.33
-    version: 2.0.0-rc.33
+    specifier: 2.0.0-rc.35
+    version: 2.0.0-rc.35
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.34
     version: 2.0.0-rc.34(vite@5.2.10)
@@ -388,7 +388,7 @@ packages:
     peerDependencies:
       vite: '>=5.0.0'
     dependencies:
-      '@master/css': 2.0.0-rc.34
+      '@master/css': 2.0.0-rc.35
       '@master/css-extractor': 2.0.0-rc.34
       lodash.debounce: 4.0.8
       vite: 5.2.10
@@ -397,7 +397,7 @@ packages:
   /@master/css-extractor@2.0.0-rc.34:
     resolution: {integrity: sha512-CISCP2OWPNJBl/LsjOxKn1xKaNDvTmRtzU+JubwdxiZiqEhb/pz5nBDw2Mb4+tg94yXDH+yxyXxVdl053hDl4w==}
     dependencies:
-      '@master/css': 2.0.0-rc.34
+      '@master/css': 2.0.0-rc.35
       '@master/css-explore-config': 2.0.0-rc.34
       '@master/css-validator': 2.0.0-rc.34
       '@techor/extend': 3.0.21
@@ -411,26 +411,18 @@ packages:
   /@master/css-validator@2.0.0-rc.34:
     resolution: {integrity: sha512-Kvb4thrneUH6wezHZ2qcWJUc1z5ACv6xGL7yzLUfY+rr25ELO3CNG8iCON5yxuQFAMk7M5lOxBpkq9sFcCBY1A==}
     dependencies:
-      '@master/css': 2.0.0-rc.34
+      '@master/css': 2.0.0-rc.35
       css-tree: 2.3.1
     dev: false
 
-  /@master/css@2.0.0-rc.33:
-    resolution: {integrity: sha512-PcWjNHyF5JhmE55FumLs72E8miLvpaRtQEC2V7Ilw2ji2Ntx1D7iX9idnAtRc5fB3jrrZxVbShNbIfxq1sh1lw==}
+  /@master/css@2.0.0-rc.35:
+    resolution: {integrity: sha512-ZKy3u00nfFuP/T5498ObPDx/MmkzMil/ofbK1lVmqn1+3yAaR8V5s7Wl2WIoKVPtEC+ha5jVSdhbV57oLwcjjQ==}
     hasBin: true
     dependencies:
       '@master/colors': 2.0.0
       '@master/normal.css': 2.1.1
-      '@techor/extend': 3.0.21
-    dev: false
-
-  /@master/css@2.0.0-rc.34:
-    resolution: {integrity: sha512-ml5c/rAcfZRdsQsex7P273uepSvLIXEuEWn6WI2RjwWxs345kM9NZN/cMHDRs2ro1GY0r9OOHSWn2wQ0Bfz+cw==}
-    hasBin: true
-    dependencies:
-      '@master/colors': 2.0.0
-      '@master/normal.css': 2.1.1
-      '@techor/extend': 3.0.21
+      '@techor/extend': 3.0.22
+      csstype: 3.1.3
     dev: false
 
   /@master/normal.css@2.1.1:
@@ -696,6 +688,10 @@ packages:
     resolution: {integrity: sha512-c3y6Z8wSr5XOGx/xR64byk/SGOjLtXYEvdjyDUxygFIAElNwJugPHSX1OFDEtZsTsxlUwK11GOGmWqJNDHVYEA==}
     dev: false
 
+  /@techor/extend@3.0.22:
+    resolution: {integrity: sha512-1I6apNEJ0oquec4t9KXiak5PeU65/dczDg1HGHRxjGtV9D5hnP2qLwPXGjoJnaoLoCbnAj/IGKkt7NAqItJKZA==}
+    dev: false
+
   /@techor/glob@3.0.21:
     resolution: {integrity: sha512-GacFm9v7M7jYC6o6jAf7e5mkluHCE1t9soECzAHdKfOkVUaAvkk/3UteALGVVVYSrrcp8Wuzf8f3CDOl68kk/w==}
     dependencies:
@@ -887,7 +883,6 @@ packages:
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
-    dev: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
