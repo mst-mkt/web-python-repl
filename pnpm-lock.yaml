@@ -12,8 +12,8 @@ dependencies:
     specifier: 2.0.0-rc.38
     version: 2.0.0-rc.38(vite@5.2.11)
   '@master/normal.css':
-    specifier: ^2.1.1
-    version: 2.1.1
+    specifier: ^3.0.2
+    version: 3.0.2
   '@tabler/icons-react':
     specifier: ^3.3.0
     version: 3.3.0(react@18.3.1)
@@ -423,10 +423,6 @@ packages:
       '@master/normal.css': 3.0.2
       '@techor/extend': 3.0.23
       csstype: 3.1.3
-    dev: false
-
-  /@master/normal.css@2.1.1:
-    resolution: {integrity: sha512-u5NQLjTLmhwVzfrro40EfuAtDpYb/HCXEwlsBibyCc9Fpc5IjZVWZDSXpcejYiX7SJUuwdZnlJ+HBBZfBHMqkw==}
     dev: false
 
   /@master/normal.css@3.0.2:

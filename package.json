@@ -16,7 +16,7 @@
   "dependencies": {
     "@master/css": "2.0.0-rc.38",
     "@master/css-extractor.vite": "2.0.0-rc.38",
-    "@master/normal.css": "^2.1.1",
+    "@master/normal.css": "^3.0.2",
     "@tabler/icons-react": "^3.3.0",
     "isomorphic-fetch": "^3",
     "pyodide": "^0.25.1",
