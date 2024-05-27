@@ -17,7 +17,7 @@
     "@master/css": "2.0.0-rc.38",
     "@master/css-extractor.vite": "2.0.0-rc.38",
     "@master/normal.css": "^3.0.2",
-    "@tabler/icons-react": "^3.4.0",
+    "@tabler/icons-react": "^3.5.0",
     "isomorphic-fetch": "^3",
     "pyodide": "^0.25.1",
     "react": "^18.3.1",
