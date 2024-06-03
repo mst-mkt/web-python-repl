@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.0.0-rc.40
     version: 2.0.0-rc.40
   '@master/css-extractor.vite':
-    specifier: 2.0.0-rc.39
-    version: 2.0.0-rc.39(vite@5.2.12)
+    specifier: 2.0.0-rc.40
+    version: 2.0.0-rc.40(vite@5.2.12)
   '@master/normal.css':
     specifier: ^3.0.2
     version: 3.0.2
@@ -376,30 +376,30 @@ packages:
     resolution: {integrity: sha512-0s4DzBSXthRVCFKkKbGvAioT6oVlN54f9H4MX6GN1YoNG0/x0NECyIv/5Tx9p5nDMr+ClDHSDbQ37DJUp8CHFg==}
     dev: false
 
-  /@master/css-explore-config@2.0.0-rc.39:
-    resolution: {integrity: sha512-4HL9hshJ+z4MDFLdhhljufUU2z/IJxWmL5wioeXMNUXGmwY/YNF8IfEP94CGEhF6qMs5zeGcqnnkWpD3v17cpw==}
+  /@master/css-explore-config@2.0.0-rc.40:
+    resolution: {integrity: sha512-HvxpI+Gtmf29Bqm34QnY2S6/lUb5RAV9al7fu8NDswvlddoSvPAxOlzs0i0r0X+1NJe0vKagLz12HaykpgRv2g==}
     dependencies:
       '@techor/log': 3.0.23
       explore-config: 3.0.23
     dev: false
 
-  /@master/css-extractor.vite@2.0.0-rc.39(vite@5.2.12):
-    resolution: {integrity: sha512-w+EM2DaMY8iCCKlrVPJ+rlDQwsgIB7VrOH2m/cqFz5ZDAIIll5R2tLi76HkO5myZ/bC0UQtZm/TEghtzirnOQg==}
+  /@master/css-extractor.vite@2.0.0-rc.40(vite@5.2.12):
+    resolution: {integrity: sha512-fSxZXE/ccdNT4GlC2qZzIi/ifHPKllugwlzUhoDlNsemMk5FGb4l1zbE3aDInpISAzSBGGxPRK/y8954Tmclhg==}
     peerDependencies:
       vite: '>=5.0.0'
     dependencies:
       '@master/css': 2.0.0-rc.40
-      '@master/css-extractor': 2.0.0-rc.39
+      '@master/css-extractor': 2.0.0-rc.40
       lodash.debounce: 4.0.8
       vite: 5.2.12
     dev: false
 
-  /@master/css-extractor@2.0.0-rc.39:
-    resolution: {integrity: sha512-sHNQ4BNt1sc+TTo0rLFoOJK9fsBF8Mkbfwg4Om82XSH7xGCFdlrUIvv3IDGqW90/AztM4RvAnyKtKGJGMjfnIQ==}
+  /@master/css-extractor@2.0.0-rc.40:
+    resolution: {integrity: sha512-c2aBwzt6QJ1ohErVbIKsdGItWlaQo+dr/PS53nkkcRv7j7RJA2c4yIJzjYG27a7cFO3iFRoIirWTv9pjybsuJQ==}
     dependencies:
       '@master/css': 2.0.0-rc.40
-      '@master/css-explore-config': 2.0.0-rc.39
-      '@master/css-validator': 2.0.0-rc.39
+      '@master/css-explore-config': 2.0.0-rc.40
+      '@master/css-validator': 2.0.0-rc.40
       '@techor/extend': 3.0.23
       '@techor/glob': 3.0.23
       '@techor/log': 3.0.23
@@ -408,8 +408,8 @@ packages:
       minimatch: 9.0.3
     dev: false
 
-  /@master/css-validator@2.0.0-rc.39:
-    resolution: {integrity: sha512-PEMGyRm6a7FdF321tG9DhWgzLtWUy56rTBb4uJ5BPAMUnYPtERZZakRYiM0N1a1KqGB+B+1cPmPVZNsQXZr0RQ==}
+  /@master/css-validator@2.0.0-rc.40:
+    resolution: {integrity: sha512-6z5GerEn3ab2luzcLVuKcXIOmshxqxR3EAgQXwZruCMWFwwhA1FzU/3FNUhFlVXWpokQYHR2EHeIt6p12MvjXA==}
     dependencies:
       '@master/css': 2.0.0-rc.40
       css-tree: 2.3.1
@@ -794,19 +794,11 @@ packages:
       balanced-match: 1.0.2
     dev: false
 
-  /braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
-    engines: {node: '>=8'}
-    dependencies:
-      fill-range: 7.0.1
-    dev: false
-
   /braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.1.1
-    dev: true
 
   /chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
@@ -818,7 +810,7 @@ packages:
     engines: {node: '>= 8.10.0'}
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -984,7 +976,7 @@ packages:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
     dev: false
 
   /fastq@1.17.1:
@@ -993,19 +985,11 @@ packages:
       reusify: 1.0.4
     dev: false
 
-  /fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
-    engines: {node: '>=8'}
-    dependencies:
-      to-regex-range: 5.0.1
-    dev: false
-
   /fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
-    dev: true
 
   /foreground-child@3.1.1:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
@@ -1212,21 +1196,12 @@ packages:
     engines: {node: '>= 8'}
     dev: false
 
-  /micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
-    dependencies:
-      braces: 3.0.2
-      picomatch: 2.3.1
-    dev: false
-
   /micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
-    dev: true
 
   /mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
