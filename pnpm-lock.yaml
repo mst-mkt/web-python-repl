@@ -10,7 +10,7 @@ dependencies:
     version: 2.0.0-rc.38
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.39
-    version: 2.0.0-rc.39(vite@5.2.11)
+    version: 2.0.0-rc.39(vite@5.2.12)
   '@master/normal.css':
     specifier: ^3.0.2
     version: 3.0.2
@@ -42,7 +42,7 @@ devDependencies:
     version: 18.3.0
   '@vitejs/plugin-react-swc':
     specifier: ^3.7.0
-    version: 3.7.0(vite@5.2.11)
+    version: 3.7.0(vite@5.2.12)
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^5.4.5
     version: 5.4.5
   vite:
-    specifier: ^5.2.11
-    version: 5.2.11
+    specifier: ^5.2.12
+    version: 5.2.12
 
 packages:
 
@@ -383,7 +383,7 @@ packages:
       explore-config: 3.0.23
     dev: false
 
-  /@master/css-extractor.vite@2.0.0-rc.39(vite@5.2.11):
+  /@master/css-extractor.vite@2.0.0-rc.39(vite@5.2.12):
     resolution: {integrity: sha512-w+EM2DaMY8iCCKlrVPJ+rlDQwsgIB7VrOH2m/cqFz5ZDAIIll5R2tLi76HkO5myZ/bC0UQtZm/TEghtzirnOQg==}
     peerDependencies:
       vite: '>=5.0.0'
@@ -391,7 +391,7 @@ packages:
       '@master/css': 2.0.0-rc.39
       '@master/css-extractor': 2.0.0-rc.39
       lodash.debounce: 4.0.8
-      vite: 5.2.11
+      vite: 5.2.12
     dev: false
 
   /@master/css-extractor@2.0.0-rc.39:
@@ -735,13 +735,13 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@vitejs/plugin-react-swc@3.7.0(vite@5.2.11):
+  /@vitejs/plugin-react-swc@3.7.0(vite@5.2.12):
     resolution: {integrity: sha512-yrknSb3Dci6svCd/qhHqhFPDSw0QtjumcqdKMoNNzmOl5lMXTTiqzjWtG4Qask2HdvvzaNgSunbQGet8/GrKdA==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.5.7
-      vite: 5.2.11
+      vite: 5.2.12
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1597,8 +1597,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /vite@5.2.11:
-    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
+  /vite@5.2.12:
+    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
