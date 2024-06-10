@@ -10,10 +10,10 @@ dependencies:
     version: 2.0.0-rc.40
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.40
-    version: 2.0.0-rc.40(vite@5.2.12)
+    version: 2.0.0-rc.40(vite@5.2.13)
   '@master/normal.css':
-    specifier: ^3.0.2
-    version: 3.0.2
+    specifier: ^3.1.0
+    version: 3.1.0
   '@tabler/icons-react':
     specifier: ^3.5.0
     version: 3.5.0(react@18.3.1)
@@ -21,8 +21,8 @@ dependencies:
     specifier: ^3
     version: 3.0.0
   pyodide:
-    specifier: ^0.26.0
-    version: 0.26.0
+    specifier: ^0.26.1
+    version: 0.26.1
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -42,7 +42,7 @@ devDependencies:
     version: 18.3.0
   '@vitejs/plugin-react-swc':
     specifier: ^3.7.0
-    version: 3.7.0(vite@5.2.12)
+    version: 3.7.0(vite@5.2.13)
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^5.4.5
     version: 5.4.5
   vite:
-    specifier: ^5.2.12
-    version: 5.2.12
+    specifier: ^5.2.13
+    version: 5.2.13
 
 packages:
 
@@ -383,7 +383,7 @@ packages:
       explore-config: 3.0.23
     dev: false
 
-  /@master/css-extractor.vite@2.0.0-rc.40(vite@5.2.12):
+  /@master/css-extractor.vite@2.0.0-rc.40(vite@5.2.13):
     resolution: {integrity: sha512-fSxZXE/ccdNT4GlC2qZzIi/ifHPKllugwlzUhoDlNsemMk5FGb4l1zbE3aDInpISAzSBGGxPRK/y8954Tmclhg==}
     peerDependencies:
       vite: '>=5.0.0'
@@ -391,7 +391,7 @@ packages:
       '@master/css': 2.0.0-rc.40
       '@master/css-extractor': 2.0.0-rc.40
       lodash.debounce: 4.0.8
-      vite: 5.2.12
+      vite: 5.2.13
     dev: false
 
   /@master/css-extractor@2.0.0-rc.40:
@@ -420,13 +420,13 @@ packages:
     hasBin: true
     dependencies:
       '@master/colors': 2.0.0
-      '@master/normal.css': 3.0.2
+      '@master/normal.css': 3.1.0
       '@techor/extend': 3.0.23
       csstype: 3.1.3
     dev: false
 
-  /@master/normal.css@3.0.2:
-    resolution: {integrity: sha512-MxMkS5Y/mn6a770JiAvPR54FfJX85NDK9gJScH7OZCRxOhmZ5sKiTctt11awMtZNuevMlVrDLw9TKx1o92hf6w==}
+  /@master/normal.css@3.1.0:
+    resolution: {integrity: sha512-NDe4G+IYIa8OvmVjrHtHN5Ptu6Cu3877i/wU0Oxdi2/4873pEPnC2obPGCb3ZOH0CYiIIXKUtXK+CiH9+I6GUw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -725,13 +725,13 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@vitejs/plugin-react-swc@3.7.0(vite@5.2.12):
+  /@vitejs/plugin-react-swc@3.7.0(vite@5.2.13):
     resolution: {integrity: sha512-yrknSb3Dci6svCd/qhHqhFPDSw0QtjumcqdKMoNNzmOl5lMXTTiqzjWtG4Qask2HdvvzaNgSunbQGet8/GrKdA==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.5.7
-      vite: 5.2.12
+      vite: 5.2.13
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1324,8 +1324,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.2.0
 
-  /pyodide@0.26.0:
-    resolution: {integrity: sha512-6thkjsvbvebqNlb2mtkVF5ODcWUYT0lVuOgww4cfEJFVM0J3MtTNPznVahVDzKOdCwSWvCfAqeEqP0wR6jj5uQ==}
+  /pyodide@0.26.1:
+    resolution: {integrity: sha512-P+Gm88nwZqY7uBgjbQH8CqqU6Ei/rDn7pS1t02sNZsbyLJMyE2OVXjgNuqVT3KqYWnyGREUN0DbBUCJqk8R0ew==}
     engines: {node: '>=18.0.0'}
     dependencies:
       ws: 8.16.0
@@ -1558,8 +1558,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /vite@5.2.12:
-    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
+  /vite@5.2.13:
+    resolution: {integrity: sha512-SSq1noJfY9pR3I1TUENL3rQYDQCFqgD+lM6fTRAM8Nv6Lsg5hDLaXkjETVeBt+7vZBCMoibD+6IWnT2mJ+Zb/A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
