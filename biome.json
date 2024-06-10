@@ -35,7 +35,7 @@
       "enabled": true,
       "quoteStyle": "single",
       "jsxQuoteStyle": "double",
-      "trailingComma": "all",
+      "trailingCommas": "all",
       "semicolons": "asNeeded",
       "arrowParentheses": "always",
       "indentStyle": "space",
