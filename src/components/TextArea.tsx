@@ -1,5 +1,5 @@
 import { IconArrowBadgeRightFilled } from '@tabler/icons-react'
-import { type KeyboardEvent, useEffect, useRef } from 'react'
+import { type KeyboardEvent, useCallback, useRef } from 'react'
 
 type TextAreaProps = {
   value: string
@@ -25,16 +25,12 @@ export const TextArea = ({
     }
   }
 
-  const updateHeight = () => {
+  const updateHeight = useCallback(() => {
     if (textareaRef.current) {
       textareaRef.current.style.height = 'auto'
       textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`
     }
-  }
-
-  useEffect(() => {
-    updateHeight()
-  }, [updateHeight])
+  }, [])
 
   return (
     <div className="p:8|16 mt:16 flex gap:4 r:12 outline:#0000|solid|2 outline:#58f5:has(textarea:focus-visible) ~outline-color|.2s|ease-in-out">
