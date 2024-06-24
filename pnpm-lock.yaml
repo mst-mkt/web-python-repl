@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@master/css':
-    specifier: 2.0.0-rc.41
-    version: 2.0.0-rc.41
+    specifier: 2.0.0-rc.43
+    version: 2.0.0-rc.43
   '@master/css-extractor.vite':
     specifier: 2.0.0-rc.43
     version: 2.0.0-rc.43(vite@5.3.1)
@@ -413,16 +413,6 @@ packages:
     dependencies:
       '@master/css': 2.0.0-rc.43
       css-tree: 2.3.1
-    dev: false
-
-  /@master/css@2.0.0-rc.41:
-    resolution: {integrity: sha512-+MlISg56/lo8tksIeVJpZ5i0UHlEj3IlFwmHewphZH2IjkZ/GfmuiBr6xGMNPspecStWhdOUhXKZegsQXDYcpg==}
-    hasBin: true
-    dependencies:
-      '@master/colors': 2.1.0
-      '@master/normal.css': 3.1.0
-      '@techor/extend': 3.0.23
-      csstype: 3.1.3
     dev: false
 
   /@master/css@2.0.0-rc.43:

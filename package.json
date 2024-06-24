@@ -14,7 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@master/css": "2.0.0-rc.41",
+    "@master/css": "2.0.0-rc.43",
     "@master/css-extractor.vite": "2.0.0-rc.43",
     "@master/normal.css": "^3.1.0",
     "@tabler/icons-react": "^3.6.0",
