@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.44
-        version: 2.0.0-rc.44
+        specifier: 2.0.0-rc.45
+        version: 2.0.0-rc.45
       '@master/css-extractor.vite':
         specifier: 2.0.0-rc.44
         version: 2.0.0-rc.44(vite@5.3.5)
@@ -290,8 +290,8 @@ packages:
   '@master/css-validator@2.0.0-rc.44':
     resolution: {integrity: sha512-XSidrsU2u2xBqPtNs16YNKos1vXXjBWp+Kz3Az942YECIGAvpH2keBcJy1ChzLLtlExPAr5IggWF9d3S09BSKw==}
 
-  '@master/css@2.0.0-rc.44':
-    resolution: {integrity: sha512-cdSeCgQmRgTR7PBZEb6kXDW43SP+1lokLUC+8zqC48ZMG/2outxk79s5ftsTtjRuOiV35GLxHOKKXZvr9Zd64A==}
+  '@master/css@2.0.0-rc.45':
+    resolution: {integrity: sha512-/a3QRL7rf2PXcT9LRNb9H/Uuyq/czMgyGipWUwLB79y9al7GOoSSdNvdaAPBv9yvAJ6IkyL58nEeqnWxgKDSKw==}
     hasBin: true
 
   '@master/normal.css@3.1.0':
@@ -1183,14 +1183,14 @@ snapshots:
 
   '@master/css-extractor.vite@2.0.0-rc.44(vite@5.3.5)':
     dependencies:
-      '@master/css': 2.0.0-rc.44
+      '@master/css': 2.0.0-rc.45
       '@master/css-extractor': 2.0.0-rc.44
       lodash.debounce: 4.0.8
       vite: 5.3.5
 
   '@master/css-extractor@2.0.0-rc.44':
     dependencies:
-      '@master/css': 2.0.0-rc.44
+      '@master/css': 2.0.0-rc.45
       '@master/css-explore-config': 2.0.0-rc.44
       '@master/css-validator': 2.0.0-rc.44
       '@techor/extend': 3.0.23
@@ -1202,10 +1202,10 @@ snapshots:
 
   '@master/css-validator@2.0.0-rc.44':
     dependencies:
-      '@master/css': 2.0.0-rc.44
+      '@master/css': 2.0.0-rc.45
       css-tree: 2.3.1
 
-  '@master/css@2.0.0-rc.44':
+  '@master/css@2.0.0-rc.45':
     dependencies:
       '@master/colors': 2.1.0
       '@master/normal.css': 3.1.0
