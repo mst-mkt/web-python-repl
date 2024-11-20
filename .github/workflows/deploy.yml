@@ -1,0 +1,43 @@
+name: Deploy Client
+
+on:
+  workflow_run:
+    workflows: ["Lint and TypeCheck"]
+    branches:
+      - main
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Get Pyodide Version
+        run: |
+          VERSION=$(npm list pyodide --depth=0 | grep pyodide | sed 's/.*@//')
+          echo "PYODIDE_VERSION=$VERSION" >> $GITHUB_ENV
+      - name: Build
+        env:
+          VITE_PYODIDE_INDEX_URL: "https://cdn.jsdelivr.net/pyodide/${{ env.PYODIDE_VERSION }}/full/"
+        run: pnpm build
+      - name: Deploy
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: web-python-repl
+          workingDirectory: ./apps/frontend
+          directory: ./dist
+          branch: main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
