@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.44
-        version: 2.0.0-rc.44
+        specifier: 2.0.0-rc.45
+        version: 2.0.0-rc.45
       '@master/css-extractor.vite':
         specifier: 2.0.0-rc.44
         version: 2.0.0-rc.44(vite@5.4.11)
