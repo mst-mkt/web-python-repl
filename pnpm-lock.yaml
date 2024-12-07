@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.0-rc.45
         version: 2.0.0-rc.45
       '@master/css-extractor.vite':
-        specifier: 2.0.0-rc.44
-        version: 2.0.0-rc.44(vite@5.4.11)
+        specifier: 2.0.0-rc.45
+        version: 2.0.0-rc.45(vite@5.4.11)
       '@master/normal.css':
         specifier: ^3.1.0
         version: 3.1.0
@@ -279,8 +279,8 @@ packages:
   '@master/css-explore-config@2.0.0-rc.45':
     resolution: {integrity: sha512-rbI+XDSQ158k3w6fLVhHj7xz9Owuun09l5odOCQ11wiCiLiOuQNJbbS8ot40mIR1RUYmat6WM++htLHtyIrQDQ==}
 
-  '@master/css-extractor.vite@2.0.0-rc.44':
-    resolution: {integrity: sha512-uWYXNVGrq++vK+W0t+HGg3WH1WCRth1/qCDj8xnGCfV13fPyUnBJFaN6alwPWYENtvwwcbcmmF+OXWJFAXzaWQ==}
+  '@master/css-extractor.vite@2.0.0-rc.45':
+    resolution: {integrity: sha512-79RpT4xS7LFAJykGYzFIkXNUM9SJBaoIrKkQuGaDYKU/IWmc92WJGQFleP+xbrqau8D90FKjsfy2qtUbxT+gHA==}
     peerDependencies:
       vite: '>=5.0.0'
 
@@ -289,10 +289,6 @@ packages:
 
   '@master/css-validator@2.0.0-rc.45':
     resolution: {integrity: sha512-ubrl9uthv4Avrp0E5JtoAMLCfGEk8VYeUkm2xfQcZa4UeZrMmkIFSen3K6r078xEgbTRG3jEjCWpbXMt4xsoiw==}
-
-  '@master/css@2.0.0-rc.44':
-    resolution: {integrity: sha512-cdSeCgQmRgTR7PBZEb6kXDW43SP+1lokLUC+8zqC48ZMG/2outxk79s5ftsTtjRuOiV35GLxHOKKXZvr9Zd64A==}
-    hasBin: true
 
   '@master/css@2.0.0-rc.45':
     resolution: {integrity: sha512-/a3QRL7rf2PXcT9LRNb9H/Uuyq/czMgyGipWUwLB79y9al7GOoSSdNvdaAPBv9yvAJ6IkyL58nEeqnWxgKDSKw==}
@@ -1207,9 +1203,9 @@ snapshots:
       '@techor/log': 3.0.23
       explore-config: 3.0.23
 
-  '@master/css-extractor.vite@2.0.0-rc.44(vite@5.4.11)':
+  '@master/css-extractor.vite@2.0.0-rc.45(vite@5.4.11)':
     dependencies:
-      '@master/css': 2.0.0-rc.44
+      '@master/css': 2.0.0-rc.45
       '@master/css-extractor': 2.0.0-rc.45
       lodash.debounce: 4.0.8
       vite: 5.4.11
@@ -1230,13 +1226,6 @@ snapshots:
     dependencies:
       '@master/css': 2.0.0-rc.45
       css-tree: 2.3.1
-
-  '@master/css@2.0.0-rc.44':
-    dependencies:
-      '@master/colors': 2.1.0
-      '@master/normal.css': 3.1.0
-      '@techor/extend': 3.0.23
-      csstype: 3.1.3
 
   '@master/css@2.0.0-rc.45':
     dependencies:
