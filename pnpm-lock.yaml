@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.45
-        version: 2.0.0-rc.45
+        specifier: 2.0.0-rc.47
+        version: 2.0.0-rc.47
       '@master/css-extractor.vite':
         specifier: 2.0.0-rc.47
         version: 2.0.0-rc.47(vite@6.0.3(jiti@2.4.2)(yaml@2.6.1))
@@ -296,10 +296,6 @@ packages:
   '@master/css-validator@2.0.0-rc.47':
     resolution: {integrity: sha512-D/pnvJzlobkKP5SqtK6+W/uCmjyYVxAlvE1laRn6HNmS5cpEvtnLv2GJkIEdBIZpVHhLnERCmf3z+GLbP+VWDA==}
 
-  '@master/css@2.0.0-rc.45':
-    resolution: {integrity: sha512-/a3QRL7rf2PXcT9LRNb9H/Uuyq/czMgyGipWUwLB79y9al7GOoSSdNvdaAPBv9yvAJ6IkyL58nEeqnWxgKDSKw==}
-    hasBin: true
-
   '@master/css@2.0.0-rc.47':
     resolution: {integrity: sha512-6q9p8Itbzt/G0iujizKf8UtiqBCI9bWl5pQ8ltyY5o2WvdNOLIkWNfxp2zWB0sKLgHLhzrzIx352pYz/xJ1qdw==}
     hasBin: true
@@ -495,9 +491,6 @@ packages:
 
   '@tabler/icons@3.26.0':
     resolution: {integrity: sha512-oO3D4ss+DxzxqU1aDy0f1HmToyrO0gcQWIMpzHAfV1quPUx0BZYvNm5xz1DQb4DxNm/+xNvbBGLJy4pzTLYWag==}
-
-  '@techor/extend@3.0.23':
-    resolution: {integrity: sha512-kwus5jFUOgZoCBUUq6DyiQmTbjtqHVC9E1dpf2dQaieOjTH2aegy/vKeJf2NAr+o+hKF+6RpD6nEH4soe994bg==}
 
   '@techor/extend@3.1.7':
     resolution: {integrity: sha512-dEkyhrD3dt2emUJ7DaLYwigQURBwzAlfTYLyosKb3ARRZSWjq9qUT0j5Q6GUx4dElarw157ZLavqOqnSZqaGxA==}
@@ -1232,13 +1225,6 @@ snapshots:
       '@master/css': 2.0.0-rc.47
       css-tree: 3.1.0
 
-  '@master/css@2.0.0-rc.45':
-    dependencies:
-      '@master/colors': 2.1.0
-      '@master/normal.css': 3.1.0
-      '@techor/extend': 3.0.23
-      csstype: 3.1.3
-
   '@master/css@2.0.0-rc.47':
     dependencies:
       '@master/colors': 2.1.0
@@ -1375,8 +1361,6 @@ snapshots:
       react: 19.0.0
 
   '@tabler/icons@3.26.0': {}
-
-  '@techor/extend@3.0.23': {}
 
   '@techor/extend@3.1.7': {}
 
