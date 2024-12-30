@@ -29,7 +29,7 @@
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react-swc": "^3.7.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.5"
   },
