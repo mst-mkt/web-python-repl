@@ -24,8 +24,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       pyodide:
-        specifier: ^0.26.4
-        version: 0.26.4
+        specifier: ^0.27.2
+        version: 0.27.2
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -858,8 +858,8 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
-  pyodide@0.26.4:
-    resolution: {integrity: sha512-z2CHsjVlhhJi5tYBF0AYAfNEPo3zq/z+xOpFtk1tweJkRaTqU4UK/7pLvo8DBU2VDPH31vB3pSI+8fnoqrVrFg==}
+  pyodide@0.27.2:
+    resolution: {integrity: sha512-sfA2kiUuQVRpWI4BYnU3sX5PaTTt/xrcVEmRzRcId8DzZXGGtPgCBC0gCqjUTUYSa8ofPaSjXmzESc86yvvCHg==}
     engines: {node: '>=18.0.0'}
 
   queue-microtask@1.2.3:
@@ -1724,7 +1724,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  pyodide@0.26.4:
+  pyodide@0.27.2:
     dependencies:
       ws: 8.18.0
     transitivePeerDependencies:
