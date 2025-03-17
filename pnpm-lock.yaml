@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.47
-        version: 2.0.0-rc.47
+        specifier: 2.0.0-rc.53
+        version: 2.0.0-rc.53
       '@master/css-extractor.vite':
         specifier: 2.0.0-rc.47
         version: 2.0.0-rc.47(vite@6.0.11(jiti@2.4.2)(yaml@2.6.1))
@@ -302,8 +302,8 @@ packages:
   '@master/css-validator@2.0.0-rc.47':
     resolution: {integrity: sha512-D/pnvJzlobkKP5SqtK6+W/uCmjyYVxAlvE1laRn6HNmS5cpEvtnLv2GJkIEdBIZpVHhLnERCmf3z+GLbP+VWDA==}
 
-  '@master/css@2.0.0-rc.47':
-    resolution: {integrity: sha512-6q9p8Itbzt/G0iujizKf8UtiqBCI9bWl5pQ8ltyY5o2WvdNOLIkWNfxp2zWB0sKLgHLhzrzIx352pYz/xJ1qdw==}
+  '@master/css@2.0.0-rc.53':
+    resolution: {integrity: sha512-a6+fd6If0Ncm4BCpvYOQtzo8Ag2aWMUDazcFxv+SBFdmiHTHYS3v8DBUtdqJtGAsW7WGIjnlUvvmLN9FPSSzKg==}
     hasBin: true
 
   '@master/normal.css@3.1.0':
@@ -1218,13 +1218,13 @@ snapshots:
 
   '@master/css-extractor.vite@2.0.0-rc.47(vite@6.0.11(jiti@2.4.2)(yaml@2.6.1))':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.53
       '@master/css-extractor': 2.0.0-rc.47
       vite: 6.0.11(jiti@2.4.2)(yaml@2.6.1)
 
   '@master/css-extractor@2.0.0-rc.47':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.53
       '@master/css-explore-config': 2.0.0-rc.47
       '@master/css-validator': 2.0.0-rc.47
       '@techor/extend': 3.1.7
@@ -1236,10 +1236,10 @@ snapshots:
 
   '@master/css-validator@2.0.0-rc.47':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.53
       css-tree: 3.1.0
 
-  '@master/css@2.0.0-rc.47':
+  '@master/css@2.0.0-rc.53':
     dependencies:
       '@master/colors': 2.1.0
       '@master/normal.css': 3.1.0
