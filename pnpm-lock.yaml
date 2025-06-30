@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.47
-        version: 2.0.0-rc.47
+        specifier: 2.0.0-rc.69
+        version: 2.0.0-rc.69
       '@master/css-extractor.vite':
         specifier: 2.0.0-rc.47
         version: 2.0.0-rc.47(vite@6.2.3(jiti@2.4.2)(yaml@2.6.1))
@@ -285,8 +285,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@master/colors@2.1.0':
-    resolution: {integrity: sha512-yH3RLrwejqw7cNn59/OGA7WwdY/J9fRABrFNth6nzqzMnd5ac3wquPpvDZX/sQfKUofD765xfw1yxQx5Ob9jhw==}
+  '@master/colors@3.0.0':
+    resolution: {integrity: sha512-1fqX0gncBTXtaidwCqJmOXgW6n0Ikh8DAFsW9/FKwiSYxrNdE0LlI4I0ozbdFdFRfheTV9MUbReiqeuDnD75aQ==}
 
   '@master/css-explore-config@2.0.0-rc.47':
     resolution: {integrity: sha512-EIMlSPf87jTPCH6lZZ24hUcrXB/wbbr75GUMvuuVUHbyrauPjwfrg2piHJMp0mA5ymVWiRqoMlxN8Aadi/GXyg==}
@@ -302,12 +302,15 @@ packages:
   '@master/css-validator@2.0.0-rc.47':
     resolution: {integrity: sha512-D/pnvJzlobkKP5SqtK6+W/uCmjyYVxAlvE1laRn6HNmS5cpEvtnLv2GJkIEdBIZpVHhLnERCmf3z+GLbP+VWDA==}
 
-  '@master/css@2.0.0-rc.47':
-    resolution: {integrity: sha512-6q9p8Itbzt/G0iujizKf8UtiqBCI9bWl5pQ8ltyY5o2WvdNOLIkWNfxp2zWB0sKLgHLhzrzIx352pYz/xJ1qdw==}
+  '@master/css@2.0.0-rc.69':
+    resolution: {integrity: sha512-HET2rQjk7Q3k5T/ieqgUoxrSp4eE7b0x4b9QPv5Wrz+lTngKFLkrgrQh6oPmMDIcxYlparWD+7NtOLUhNrByMA==}
     hasBin: true
 
   '@master/normal.css@3.1.0':
     resolution: {integrity: sha512-NDe4G+IYIa8OvmVjrHtHN5Ptu6Cu3877i/wU0Oxdi2/4873pEPnC2obPGCb3ZOH0CYiIIXKUtXK+CiH9+I6GUw==}
+
+  '@master/normal.css@3.2.0':
+    resolution: {integrity: sha512-ErWm7JPFZGJVfSjCub43vBwaspTbr60hZlXyc0Kw9qp47hDB7dLjfcKj5aBDN/Hog74d4fbjrd7rGqIgRsJy8A==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -739,6 +742,9 @@ packages:
   jiti@2.4.2:
     resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
     hasBin: true
+
+  json-safe-extend@3.2.5:
+    resolution: {integrity: sha512-QeYf9bPGbWj+gci8YfZ05FEamC1Y7zAFvlwVtQB4Gg2Wxxc4pCnPhme5JprrrRuu/lQtICsV/YOshkzEm7yzEg==}
 
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
@@ -1214,7 +1220,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@master/colors@2.1.0': {}
+  '@master/colors@3.0.0': {}
 
   '@master/css-explore-config@2.0.0-rc.47':
     dependencies:
@@ -1223,13 +1229,13 @@ snapshots:
 
   '@master/css-extractor.vite@2.0.0-rc.47(vite@6.2.3(jiti@2.4.2)(yaml@2.6.1))':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.69
       '@master/css-extractor': 2.0.0-rc.47
       vite: 6.2.3(jiti@2.4.2)(yaml@2.6.1)
 
   '@master/css-extractor@2.0.0-rc.47':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.69
       '@master/css-explore-config': 2.0.0-rc.47
       '@master/css-validator': 2.0.0-rc.47
       '@techor/extend': 3.1.7
@@ -1241,17 +1247,19 @@ snapshots:
 
   '@master/css-validator@2.0.0-rc.47':
     dependencies:
-      '@master/css': 2.0.0-rc.47
+      '@master/css': 2.0.0-rc.69
       css-tree: 3.1.0
 
-  '@master/css@2.0.0-rc.47':
+  '@master/css@2.0.0-rc.69':
     dependencies:
-      '@master/colors': 2.1.0
-      '@master/normal.css': 3.1.0
-      '@techor/extend': 3.1.7
+      '@master/colors': 3.0.0
+      '@master/normal.css': 3.2.0
       csstype: 3.1.3
+      json-safe-extend: 3.2.5
 
   '@master/normal.css@3.1.0': {}
+
+  '@master/normal.css@3.2.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1623,6 +1631,8 @@ snapshots:
       '@pkgjs/parseargs': 0.11.0
 
   jiti@2.4.2: {}
+
+  json-safe-extend@3.2.5: {}
 
   lilconfig@3.1.3: {}
 
